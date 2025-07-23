@@ -1,0 +1,68 @@
+@font-face {
+  font-family:'Bainsley-Roman';
+  src: 
+    url("fonts/Bainsley_Roman.otf") format("opentype"),
+    url("fonts/Bainsley_Italic.otf") format("opentype"),
+    url("fonts/Bainsley_Bold_Italic.otf") format("opentype"),
+    url("fonts/Bainsley_Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.left-card-container {
+  width: 40vw;
+  height: 100vh;
+  position:absolute;
+  left:0;
+  top:0;
+  margin:0;
+  padding:0;
+}  
+  .ice-photo {
+      height: 100vh;
+      width: 40vw;
+      z-index: -1;
+  }
+  .logo-text {
+      background-color: rgba(0, 0, 0, 0.3);
+      line-height: 3;
+      width:40vw;
+      position:absolute;
+      left:0;
+      top:42.5vh;
+      text-align: center;
+      font-size: 2em;
+      color:aliceblue;
+      font-family: "Bainsley-Roman", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+.right-card-container {
+  width: 59vw;
+  height: 100vh;
+  position: absolute;
+  right:0;
+  top:0;
+  margin:0;
+  padding:0;
+}
+  .head {
+    position: relative;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 33.333vh;
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+    .head-text {
+      position:absolute;
+      bottom:0;
+      font-family: "Bainsley-Roman", 'Times New Roman', Times, serif;
+      line-height: 1.5;
+      font-size: 1.3em;
+    }
+  .body {
+    background-color: white;
+    height: 33.333vh;
+    box-shadow: 5px 2.5px 2.5px rgba(0, 0, 0, 0.3);
+  }
+  .foot {
+    background-color: rgba(0, 0, 0, 0.03);
+    height: 33.333vh;
+  }
