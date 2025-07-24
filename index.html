@@ -20,7 +20,22 @@
         </div>
         <div class="body">
             <form action="example.com/path" method="post">
-                <input type="email">
+                <div class="left-body-block">
+                    <label id="input-header" for="first-name">First Name</label>
+                        <input type="text" class="first-name">
+                    <label id="input-header" for="email">Email</label>
+                        <input class="email" type="email">
+                    <label id="input-header" for="password">Password</label>
+                        <input type="password" class="password">
+                </div>
+                <div class="right-body-block">
+                    <label for="last-name" id="input-header">Last Name</label>
+                        <input type="text" class="last-name">
+                    <label id="input-header" for="phone-number">Phone Number</label>
+                        <input type="tel" class="phone-number">
+                    <label for="confirm-password" id="input-header">Confirm Password</label>
+                        <input type="password" class="confirm-password">
+                </div>
             </form>
 
         </div>
