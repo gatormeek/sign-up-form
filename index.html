@@ -24,9 +24,9 @@
                     <label id="input-header" for="first-name">First Name</label>
                         <input type="text" class="first-name">
                     <label id="input-header" for="email">Email</label>
-                        <input class="email" type="email">
+                        <input class="email" type="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
                     <label id="input-header" for="password">Password</label>
-                        <input type="password" class="password">
+                        <input type="password" class="password" minlength="10">
                 </div>
                 <div class="right-body-block">
                     <label for="last-name" id="input-header">Last Name</label>
@@ -34,12 +34,13 @@
                     <label id="input-header" for="phone-number">Phone Number</label>
                         <input type="tel" class="phone-number">
                     <label for="confirm-password" id="input-header">Confirm Password</label>
-                        <input type="password" class="confirm-password">
+                        <input type="password" class="confirm-password" minlength="10">
                 </div>
             </form>
 
         </div>
         <div class="foot">
+            <button class="sign-up">Sign Up</button>
         </div>
     </div>
     

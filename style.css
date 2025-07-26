@@ -8,11 +8,17 @@
   font-weight: normal;
   font-style: normal;
 }
+html::-webkit-scrollbar {
+  display: none;
+}
 html {
   position: relative;
+  width:100vw;
+  height:99vh;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .left-card-container {
-  width: 40vw;
+  width: 41vw;
   height: 100vh;
   position:absolute;
   left:0;
@@ -22,18 +28,19 @@ html {
 }  
   .ice-photo {
       height: 100vh;
-      width: 40vw;
+      width: 41vw;
       z-index: -1;
   }
   .logo-text {
       background-color: rgba(0, 0, 0, 0.3);
-      line-height: 3;
-      width:40vw;
+      line-height: 2.5;
+      width:41vw;
+      height: 13vh;
       position:absolute;
       left:0;
       top:42.5vh;
       text-align: center;
-      font-size: 2em;
+      font-size: 5vh;
       color:aliceblue;
       font-family: "Bainsley-Roman", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -45,13 +52,17 @@ html {
   top:0;
   margin:0;
   padding:0;
+  overflow: scroll;
 }
+  .head, .body, .foot {
+    position: relative;
+    padding: 6em;
+    box-sizing: border-box;
+  }
   .head {
     position: relative;
     padding-left: 1vw;
     padding-right: 1vw;
-    height: 33.333vh;
-    background-color: rgba(0, 0, 0, 0.1);
   }
     .head-text {
       position:absolute;
@@ -63,9 +74,24 @@ html {
   .body {
     position: relative;
     background-color: white;
-    height: 33.333vh;
-    box-shadow: 5px 2.5px 2.5px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 2.5px 2.5px rgba(0, 95, 139, 0.5);
   }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"]:invalid,
+    input[type="password"]:invalid {
+      border: 2px solid red;
+    }
+    .left-body-block {
+      position:absolute;
+      left:1vw;
+      top:0;
+    }
+    .right-body-block {
+      position: absolute;
+      left:25vw;
+      top:0;
+    }
     #input-header {
       display: block;
       margin-top: 2vh;
@@ -73,11 +99,18 @@ html {
       
     }
     #input-header {
-      font-size: 1.5em;
-      margin-left: 2vw;
+      font-size: 1.3em;
+      text-align: center;
     }
   .foot {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 33.333vh;
   }
+    button.sign-up {
+      position:absolute;
+      background-color: rgba(255, 255, 255, 1);
+      border:none;
+      padding: 1rem;
+      left: 2rem;
+      top: 1rem;
+      box-shadow: 5px 2.5px 2.5px rgba(0, 95, 139, 0.5);
+    }
